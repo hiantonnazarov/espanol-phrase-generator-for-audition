@@ -10,7 +10,7 @@ Set-StrictMode -Version Latest
 
 $rootDir = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if ($VocabularyPath -eq '') { $VocabularyPath = Join-Path $rootDir '2_vocabulary.md' }
-if ($PhrasesPath -eq '') { $PhrasesPath = Join-Path $rootDir '5_phrases.md' }
+if ($PhrasesPath -eq '') { $PhrasesPath = Join-Path $rootDir '5_phrases_audio.md' }
 if ($OutputPath -eq '') { $OutputPath = Join-Path $rootDir '4_words_usage.md' }
 
 function Get-StopwordSet {
@@ -737,6 +737,70 @@ function Get-PhraseRowsFromTableBlock {
   return @($result.ToArray())
 }
 
+function Get-AudioRowFromLine {
+  param([string]$Line)
+
+  $clean = Get-CleanCell $Line
+  if ($clean -eq '') {
+    return [pscustomobject]@{
+      Spanish = ''
+      Russian = ''
+    }
+  }
+
+  $match = [regex]::Match($clean, '[А-Яа-яЁё]')
+  if (-not $match.Success) {
+    return [pscustomobject]@{
+      Spanish = $clean
+      Russian = ''
+    }
+  }
+
+  return [pscustomobject]@{
+    Spanish = $clean.Substring(0, $match.Index).Trim()
+    Russian = $clean.Substring($match.Index).Trim()
+  }
+}
+
+function Get-PhraseRowsFromAudioBlock {
+  param([string[]]$Lines)
+
+  $result = New-Object System.Collections.Generic.List[object]
+  foreach ($line in $Lines) {
+    $row = Get-AudioRowFromLine $line
+    if (($row.Spanish -eq '') -and ($row.Russian -eq '')) { continue }
+    $result.Add($row) | Out-Null
+  }
+
+  return @($result.ToArray())
+}
+
+function Get-PhraseRowsFromAudioSection {
+  param(
+    [string[]]$Lines,
+    [string]$SectionTitle
+  )
+
+  $isNumbersTopic = $SectionTitle -match 'Числительные'
+  $result = New-Object System.Collections.Generic.List[object]
+
+  foreach ($row in (Get-PhraseRowsFromAudioBlock -Lines $Lines)) {
+    if (($row.Spanish -eq '') -or ($row.Russian -eq '')) { continue }
+    if (($row.Spanish -match '\s-\s') -or ($row.Spanish -match '-\s*$')) { continue }
+
+    if ($isNumbersTopic) {
+      $result.Add($row) | Out-Null
+      continue
+    }
+
+    if (Test-IsPhraseLikeRow -Spanish $row.Spanish -Russian $row.Russian) {
+      $result.Add($row) | Out-Null
+    }
+  }
+
+  return @($result.ToArray())
+}
+
 function Get-PhraseTableBlockForSection {
   param(
     [object[]]$Blocks,
@@ -781,19 +845,29 @@ function Get-PhraseSections {
 
   $currentTitle = ''
   $currentBlocks = New-Object System.Collections.Generic.List[object]
+  $currentRawLines = New-Object System.Collections.Generic.List[string]
 
   function Flush-CurrentSection {
     if ($currentTitle -eq '') { return }
 
-    $phraseBlock = Get-PhraseTableBlockForSection -Blocks @($currentBlocks.ToArray()) -SectionTitle $currentTitle
-
     $phrases = New-Object System.Collections.Generic.List[string]
     $rowsForSection = New-Object System.Collections.Generic.List[object]
 
-    if ($null -ne $phraseBlock) {
-      $candidateRows = @(Get-PhraseRowsFromTableBlock -Rows @($phraseBlock.Rows) -SectionTitle $currentTitle)
-      foreach ($row in $candidateRows) {
-        if ($row.Spanish -ne '') {
+    if ($currentBlocks.Count -gt 0) {
+      $phraseBlock = Get-PhraseTableBlockForSection -Blocks @($currentBlocks.ToArray()) -SectionTitle $currentTitle
+      if ($null -ne $phraseBlock) {
+        $candidateRows = @(Get-PhraseRowsFromTableBlock -Rows @($phraseBlock.Rows) -SectionTitle $currentTitle)
+        foreach ($row in $candidateRows) {
+          if ($row.Spanish -ne '') {
+            $phrases.Add($row.Spanish) | Out-Null
+            $rowsForSection.Add($row) | Out-Null
+          }
+        }
+      }
+    }
+    else {
+      foreach ($row in (Get-PhraseRowsFromAudioSection -Lines @($currentRawLines.ToArray()) -SectionTitle $currentTitle)) {
+        if (($row.Spanish -ne '') -and ($row.Russian -ne '')) {
           $phrases.Add($row.Spanish) | Out-Null
           $rowsForSection.Add($row) | Out-Null
         }
@@ -807,6 +881,7 @@ function Get-PhraseSections {
     }) | Out-Null
 
     $currentBlocks.Clear()
+    $currentRawLines.Clear()
   }
 
   $i = 0
@@ -821,6 +896,7 @@ function Get-PhraseSections {
     }
 
     if (-not $line.Trim().StartsWith('|')) {
+      $currentRawLines.Add($line) | Out-Null
       $i++
       continue
     }
@@ -926,12 +1002,12 @@ function Remove-Diacritics {
 
 function Get-TenseCoverageRules {
   return @(
-    @{ TitlePattern = 'Presente'; Label = 'Presente'; VocabularySections = @('Presente'); ReportPersons = $true },
-    @{ TitlePattern = 'Pretérito perfecto:'; Label = 'Pretérito perfecto'; VocabularySections = @('Pretérito perfecto'); ReportPersons = $true },
-    @{ TitlePattern = 'Imperfecto'; Label = 'Imperfecto'; VocabularySections = @('Imperfecto'); ReportPersons = $true },
-    @{ TitlePattern = 'Pretérito perfecto simple'; Label = 'Pretérito perfecto simple'; VocabularySections = @('Pretérito perfecto simple'); ReportPersons = $true },
-    @{ TitlePattern = 'Futuro simple'; Label = 'Futuro simple'; VocabularySections = @('Futuro simple'); ReportPersons = $true },
-    @{ TitlePattern = 'Gerundio'; Label = 'Gerundio'; VocabularySections = @('Gerundio'); ReportPersons = $false }
+    @{ TitlePattern = 'Presente|Настоящее время'; Label = 'Presente'; VocabularySections = @('Presente'); ReportPersons = $true },
+    @{ TitlePattern = 'Pretérito perfecto:|прошлое законченное.*pretérito perf'; Label = 'Pretérito perfecto'; VocabularySections = @('Pretérito perfecto'); ReportPersons = $true },
+    @{ TitlePattern = 'Imperfecto|прошедшее простое \(pretérito imperf'; Label = 'Imperfecto'; VocabularySections = @('Imperfecto'); ReportPersons = $true },
+    @{ TitlePattern = 'Pretérito perfecto simple|Прошлое законченное время \(pretérito perf'; Label = 'Pretérito perfecto simple'; VocabularySections = @('Pretérito perfecto simple'); ReportPersons = $true },
+    @{ TitlePattern = 'Futuro simple|простое будущее время \(fut'; Label = 'Futuro simple'; VocabularySections = @('Futuro simple'); ReportPersons = $true },
+    @{ TitlePattern = 'Gerundio|Герундий'; Label = 'Gerundio'; VocabularySections = @('Gerundio'); ReportPersons = $false }
   )
 }
 
@@ -1118,7 +1194,7 @@ function Get-OveruseThreshold {
 function Get-TopicValidationRules {
   return @(
     @{
-      TitlePattern = 'Presente'
+      TitlePattern = 'Presente|Настоящее время'
       RequiredSections = @('Presente')
       Expectation = 'форму presente'
       ValidationMode = 'entries'
@@ -1136,16 +1212,10 @@ function Get-TopicValidationRules {
       ValidationMode = 'time_date'
     },
     @{
-      TitlePattern = 'Погода: hace/está/hay'
-      RequiredSections = @('Hace', 'Está', 'Hay')
-      Expectation = 'погодную форму `hace` / `está` / `hay`'
+      TitlePattern = 'Погода: hace/está/hay|Погода, времена года'
+      RequiredSections = @('Hace', 'Está', 'Hay', 'Осадки и явления', 'Времена года')
+      Expectation = 'погодную форму, осадки, явление или время года'
       ValidationMode = 'weather'
-    },
-    @{
-      TitlePattern = 'Погода: осадки/явления'
-      RequiredSections = @('Осадки и явления', 'Времена года')
-      Expectation = 'осадки, явление или время года'
-      ValidationMode = 'entries'
     },
     @{
       TitlePattern = 'Природа'
@@ -1154,31 +1224,31 @@ function Get-TopicValidationRules {
       ValidationMode = 'entries'
     },
     @{
-      TitlePattern = 'Gerundio'
+      TitlePattern = 'Gerundio|Герундий'
       RequiredSections = @('Gerundio')
       Expectation = 'форму gerundio'
       ValidationMode = 'entries'
     },
     @{
-      TitlePattern = 'Pretérito perfecto simple'
+      TitlePattern = 'Pretérito perfecto simple|Прошлое законченное время \(pretérito perf'
       RequiredSections = @('Pretérito perfecto simple')
       Expectation = 'форму pretérito perfecto simple'
       ValidationMode = 'entries'
     },
     @{
-      TitlePattern = 'Pretérito perfecto:'
+      TitlePattern = 'Pretérito perfecto:|прошлое законченное.*pretérito perf'
       RequiredSections = @('Pretérito perfecto')
       Expectation = 'форму pretérito perfecto'
       ValidationMode = 'entries'
     },
     @{
-      TitlePattern = 'Imperfecto'
+      TitlePattern = 'Imperfecto|прошедшее простое \(pretérito imperf'
       RequiredSections = @('Imperfecto')
       Expectation = 'форму imperfecto'
       ValidationMode = 'entries'
     },
     @{
-      TitlePattern = 'Futuro simple'
+      TitlePattern = 'Futuro simple|простое будущее время \(fut'
       RequiredSections = @('Futuro simple')
       Expectation = 'форму futuro simple'
       ValidationMode = 'future'
@@ -1272,11 +1342,11 @@ function Get-TopicValidationFindings {
 
 function Get-TimeContextValidationRules {
   return @(
-    @{ TitlePattern = 'Gerundio' },
-    @{ TitlePattern = 'Pretérito perfecto:' },
-    @{ TitlePattern = 'Imperfecto' },
-    @{ TitlePattern = 'Pretérito perfecto simple' },
-    @{ TitlePattern = 'Futuro simple' }
+    @{ TitlePattern = 'Gerundio|Герундий' },
+    @{ TitlePattern = 'Pretérito perfecto:|прошлое законченное.*pretérito perf' },
+    @{ TitlePattern = 'Imperfecto|прошедшее простое \(pretérito imperf' },
+    @{ TitlePattern = 'Pretérito perfecto simple|Прошлое законченное время \(pretérito perf' },
+    @{ TitlePattern = 'Futuro simple|простое будущее время \(fut' }
   )
 }
 

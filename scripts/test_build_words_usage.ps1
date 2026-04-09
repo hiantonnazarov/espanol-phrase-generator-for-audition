@@ -826,6 +826,74 @@ function Test-DoesNotFlagBalancedTensePersonDistribution {
   Assert-Contains $balancePart 'Замечаний не найдено.'
 }
 
+function Test-ReadsAudioStyleTrailingPhraseBlock {
+  $report = Invoke-GeneratorForFixture -VocabularyText @'
+# vocabulary
+
+## Фразы про время и даты
+
+### Фразы про время и даты
+
+| Испанский | Перевод на русский |
+| --- | --- |
+| ¿Qué hóra es? | который час |
+| la semána que viéne | на следующей неделе |
+'@ -PhrasesText @'
+# Фразы по темам.
+
+## 14. Время и даты.
+
+qué hóra es ahóra? Который сейчас час?
+a qué hóra sális? Во сколько ты выходишь?
+
+ahóra son las seis y média. Сейчас шесть тридцать.
+la semána qué viéne descánso. На следующей неделе я отдыхаю.
+'@
+
+  Assert-Contains $report '| Фразы про время и даты | ¿Qué hóra es? | 1 |'
+  Assert-Contains $report '| Фразы про время и даты | la semána que viéne | 1 |'
+  Assert-Contains $report '## Проверка соответствия темам'
+  Assert-NotContains $report '| 14. Время и даты. | qué hóra es ahóra? |'
+  Assert-NotContains $report '| 14. Время и даты. | a qué hóra sális? |'
+}
+
+function Test-MatchesRussianAudioTenseTitles {
+  $report = Invoke-GeneratorForFixture -VocabularyText @'
+# vocabulary
+
+## Грамматические таблицы
+
+### Presente
+
+| Лицо | hablár | comér |
+| --- | --- | --- |
+| yo | háblo | cómo |
+| tú | háblas | cómes |
+| él / ella / usted | hábla | cóme |
+| nosotros/as | hablámos | comémos |
+| vosotros/as | habláis | coméis |
+| ellos / ellas / ustedes | háblan | cómen |
+'@ -PhrasesText @'
+# Фразы по темам.
+
+## 1. Настоящее время.
+
+yo - háblo.
+tú - háblas.
+él - hábla.
+
+tú háblas ahóra. Ты сейчас говоришь.
+éllos cómen hoy. Они сегодня едят.
+'@
+
+  Assert-Contains $report '## Покрытие глаголов по временам'
+  Assert-Contains $report '| Presente | hablár | да |'
+  Assert-Contains $report '| Presente | comér | да |'
+  Assert-Contains $report '## Покрытие лиц по временным разделам'
+  Assert-Contains $report '| 1. Настоящее время. | tú | да |'
+  Assert-Contains $report '| 1. Настоящее время. | ellos / ellas / ustedes | да |'
+}
+
 $tests = @(
   'Test-CountsSingleWordsAndMultiwordEntries',
   'Test-ListsUnusedEntriesSeparately',
@@ -848,7 +916,9 @@ $tests = @(
   'Test-FlagsYoHeavySkewInTenseSections',
   'Test-DoesNotFlagBalancedTensePersonDistribution',
   'Test-FlagsPlaceAdverbBalanceSkew',
-  'Test-DoesNotFlagModeratePlaceAdverbDistribution'
+  'Test-DoesNotFlagModeratePlaceAdverbDistribution',
+  'Test-ReadsAudioStyleTrailingPhraseBlock',
+  'Test-MatchesRussianAudioTenseTitles'
 ) 
 
 $failures = New-Object System.Collections.Generic.List[string]

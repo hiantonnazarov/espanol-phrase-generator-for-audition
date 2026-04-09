@@ -2,103 +2,95 @@
 
 Правило размера: тема должна проходиться за 1–2 занятия. Если внутри слишком много материала, проходи только `Фокус`, а остальное оставляй на повторение.
 
-1. **Presente: окончания + формы + стартовые глаголы**
+1. **Настоящее время.**
    Источник: `### Presente`, `### Глаголы все`
    Фокус: `háblan`, `cómes`, `vívo`, `voy`, `piénso`, `puédo`, `pído`, `conózco`, `me llamo`, `mi / mis`
 
-2. **Артикли и род**
+2. **Артикли и род.**
    Источник: `### Artículos y género`
    Фокус: `un/una`, `unos/unas`, `el/la`, `los/las`, `a + el = al`, `-o/-a`, `-dad`, `-ción/-sión`, `-ista/-e`
 
-3. **Вопросы: вопросительные слова + знакомство**
+3. **Вопросы: вопросительные слова.**
    Источник: `### Вопросительные слова`, `### Фразы`
    Фокус: `¿Cómo te llámas?`, `¿Dónde víves?`, `¿En qué ciudád víves?`, `¿Qué?`, `¿Por qué?`
 
-4. **Местоимения: меня/тебя/ему/их**
+4. **Местоимения: меня тебя ему их.**
    Источник: `### меня тебя`
    Фокус: `me`, `te`, `le`, `les`, `lo / la`, `los / las`, `a mí`, `a ti`, `a él / ella / usted`
 
-5. **Estar + Tener: состояния и потребности**
+5. **Cостояния и потребности: estár + tenér.**
    Источник: `### Estar + прилагательное / состояние`, `### Tener + существительное / ощущение`, `### Фразы`
    Фокус: `estár cansádo`, `estár ocupádo`, `estár mal`, `tenér frío`, `tenér hámbre`, `tenér sed`, `tenér suéño`, `téngo que`
 
-6. **Глаголы общения и учёбы**
+6. **Глаголы общения и учёбы.**
    Источник: `### Глаголы все`, `### Фразы`
    Фокус: `aprendér`, `comprendér`, `sabér`, `conocér`, `hablár`, `escuchár`, `preguntár`, `respondér`, `no (lo) se`, `no me acuérdo`, `a ver`
 
-7. **Предлоги базовые**
+7. **Предлоги.**
    Источник: `### Предлоги`, `### Фразы`
    Фокус: `a`, `de`, `en`, `con`, `para`, `por`, `sin`, `pensár en`, `pára mi\el\ella`
 
-8. **Место: указательные + aquí/ahí/allí**
+8. **Место: указательные + aquí ahí allí.**
    Источник: `### Указательные местоимения`, `### Наречия места`
    Фокус: `este`, `ese`, `aquel`, `aquí`, `ahí`, `allí`
 
-9. **Место: предлоги места + ориентация**
+9. **предлоги Местa.**
    Источник: `### Предлоги места`, `### Фразы`
    Фокус: `A la derecha`, `A la izquierda`, `Cerca`, `Enfrente`, `Dentro`, `Fuera`, `a mi ládo`, `por áhi`
 
-10. **Дом: комнаты + мебель + быт (всё вместе)**
+10. **Дом: комнаты + мебель + быт.**
     Источник: `### Комнаты`, `### Мебель и предметы`, `### Глаголы все`
     Фокус: `la cocína`, `el cuárto de báno`, `la cáma`, `la dúcha`, `el frigorífico`, `la lavadóra`, `abrír`, `ponér`, `limpiár`, `dejár`
 
-11. **Частотность + muy/mucho**
+11. **Частотность + muy múcho.**
     Источник: `### Частотность`, `### Muy / Mucho`, `### Фразы`
     Фокус: `siémpre`, `a véces`, `núnca`, `normalménte`, `muy bien`, `muy ríco`, `no cómo múcho`, `múchas manzánas`, `más`, `ménos`
 
-12. **Числительные (количественные + порядковые)**
+12. **Числительные.**
     Источник: `### Количественные`, `### Порядковые`
     Фокус: список `0–21`, десятки `30–90`, сотни `100–900`, `mil`, порядковые `priméro`-`decimoquínto`
 
-13. **Календарь: месяцы и дни недели**
+13. **Календарь: месяцы и дни недели.**
     Источник: `### Месяцы и дни недели`
     Фокус: `Lúnes`, `Mártes`, `Miércoles`, `Juéves`, `Viérnes`, `Sábado`, `Domíngo`, `enéro`, `júlio`, `diciémbre`
 
-14. **Время и даты: вопросы/формулы**
+14. **Время и даты.**
     Источник: `### Фразы про время и даты`, `### Фразы`
     Фокус: `¿Qué hóra es?`, `¿A qué hóra?`, `a las ócho de la tárde`, `y média`, `ménos cuárto`, `hásta mañána`, `el lúnes que viéne`
 
-15. **Погода: hace/está/hay (как говорить “какая погода”)**
-    Источник: `### Hace`, `### Está`, `### Hay`
-    Фокус: `¿Qué tiempo hace?`, `calór`, `frío`, `viénto`, `despejádo`, `nubládo`, `niébla`, `torménta`
+15-16. **Погода, времена года.**
+    Источник: `### Hace`, `### Está`, `### Hay`, `### Осадки и явления`, `### Времена года`
+    Фокус: `¿Qué tiempo hace?`, `calór`, `frío`, `viénto`, `despejádo`, `nubládo`, `niébla`, `torménta`, `la llúvia`, `la niéve`, `la salída del sol`, `la puésta del sol`, `inviérno`, `primavéra`, `veráno`, `otóño`
 
-16. **Погода: осадки/явления + времена года**
-    Источник: `### Осадки и явления`, `### Времена года`
-    Фокус: `la llúvia`, `la niéve`, `la salída del sol`, `la puésta del sol`, `inviérno`, `primavéra`, `veráno`, `otóño`
-
-17. **Природа**
+17. **Природа.**
     Источник: `### Природа`
     Фокус: `el bósque`, `el mar`, `la montáña`, `la cascáda`, `la ísla`, `las flóres`, `los árboles`, `los pájaros`
 
-18. **Союзы и связки**
+18. **Союзы.**
     Источник: `### Союзы`, `### Фразы`
     Фокус: `pero`, `porque`, `aunque`, `cuando`, `si`, `así que`, `por éso`, `de acuérdo`, `pues, buéno`
 
-19. **Gerundio**
+19. **Герундий.**
     Источник: `### Gerundio`
     Фокус: `hablándo`, `comiéndo`, `escribiéndo`, `leyéndo`, `yéndo`, `pudiéndo`
 
-20. **Pretérito perfecto: haber + participios (часть 1)**
+20-21. **прошлое законченное (pretérito perfécto compuésto): habér + particípios.**
     Источник: `### Pretérito perfecto`
-    Фокус: `he/has/ha/hemos/habéis/han`, `hécho`, `dícho`, `puésto`, `escríto`, `vísto`, `róto`, `muérto`, `vuélto`, `devuélto`
+    Фокус: `he/has/ha/hemos/habéis/han`, `hécho`, `dícho`, `puésto`, `escríto`, `vísto`, `róto`, `muérto`, `vuélto`, `devuélto`, `descubiérto`, `cubiérto`, `impuésto`, `propuésto`, `resuélto`, `compuésto`, `descompuésto`, `opuésto`, `fríto`
 
-21. **Pretérito perfecto: participios (часть 2)**
-    Источник: `### Pretérito perfecto`
-    Фокус: `descubiérto`, `cubiérto`, `impuésto`, `propuésto`, `resuélto`, `compuésto`, `descompuésto`, `opuésto`, `fríto`
-
-22. **Imperfecto**
+22. **прошедшее простое (pretérito imperfécto).**
     Источник: `### Imperfecto`
     Фокус: `-aba/-ía`, `éra`, `íba`, `veía`
 
-23. **Pretérito perfecto simple**
+23. **Прошлое законченное время (pretérito perfécto símple).**
     Источник: `### Pretérito perfecto simple`
     Фокус: `ayér`, `anteayér`, `háce dos días`, `úna vez`, `entónces`, `de repénte`, `fui`, `estúve`, `túve`
 
-24. **Futuro simple + “voy a …” из фраз**
+24. **простое будущее время (futúro símple).**
     Источник: `### Futuro simple`, `### Фразы`
     Фокус: `-é/-ás/-á`, `tendr-`, `podr-`, `querr-`, `vendr-`, `voy a ...`, `van a tomár`, `voy a dar de comér a los gátos`
 
-25. **Фразы: разговорное/кафе/быт (добор всего, что не легло выше)**
+25. **Фразы: разговорное кафе быт.**
     Источник: `### Фразы`
     Фокус: `la cárta`, `la cuénta. pago\invito yo`, `que le\te póngo`, `se puéde`, `álgo mas`, `al ménos`, `todávia no`, `Tranquílo - tranquíl`, `ventájas y desventájas`, `valér = costár`
 

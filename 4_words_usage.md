@@ -1,15 +1,15 @@
-# words usage
+﻿# words usage
 
 Источник словаря: `2_vocabulary.md`
-Источник фраз: `5_phrases.md`
+Источник фраз: `5_phrases_audio.md`
 
 Всего словарных элементов: 286
-Покрыто: 286
-Неиспользовано: 0
+Покрыто: 284
+Неиспользовано: 2
 Порог перегрузки: 3
 Дополнительных слов длиной 3+ вне канонического покрытия: 294
-Нарушений по теме: 2
-Нарушений по временному контексту: 0
+Нарушений по теме: 13
+Нарушений по временному контексту: 11
 Замечаний по русскому переводу: 0
 Замечаний по оформлению фраз: 0
 Замечаний по балансу лиц во временных разделах: 0
@@ -30,8 +30,8 @@
 | Вопросительные слова | ¿De qué? | 1 |
 | Вопросительные слова | ¿Dónde? | 1 |
 | Вопросительные слова | ¿Para qué? | 1 |
-| Вопросительные слова | ¿Por qué? | 1 |
-| Вопросительные слова | ¿Qué? | 9 |
+| Вопросительные слова | ¿Por qué? | 2 |
+| Вопросительные слова | ¿Qué? | 10 |
 | Вопросительные слова | ¿Quién? | 1 |
 | Времена года | inviérno | 1 |
 | Времена года | otóño | 1 |
@@ -124,20 +124,18 @@
 | Мебель и предметы | la dúcha | 1 |
 | Мебель и предметы | la estantería | 1 |
 | Мебель и предметы | la lavadóra | 1 |
-| Мебель и предметы | la mésa | 3 |
+| Мебель и предметы | la mésa | 4 |
 | Мебель и предметы | la mesílla | 1 |
 | Мебель и предметы | la paréd | 1 |
 | Мебель и предметы | la puérta | 1 |
 | Мебель и предметы | la secadóra | 1 |
 | Мебель и предметы | la sílla | 1 |
 | Мебель и предметы | la ventána | 2 |
-| меня тебя | a mí | 1 |
 | меня тебя | a nosotros | 2 |
-| меня тебя | a ti | 1 |
 | меня тебя | a vosotros | 1 |
 | меня тебя | le | 1 |
 | меня тебя | les | 1 |
-| меня тебя | me | 3 |
+| меня тебя | me | 5 |
 | меня тебя | nos | 1 |
 | меня тебя | os | 1 |
 | меня тебя | te | 3 |
@@ -163,24 +161,24 @@
 | Наречия места | acá | 1 |
 | Наречия места | ahí | 1 |
 | Наречия места | allá | 3 |
-| Наречия места | allí | 10 |
-| Наречия места | aquí | 10 |
+| Наречия места | allí | 9 |
+| Наречия места | aquí | 9 |
 | Осадки и явления | la llúvia | 1 |
 | Осадки и явления | la niéve | 1 |
 | Осадки и явления | la puésta del sol | 1 |
 | Осадки и явления | la salída del sol | 1 |
-| Предлоги | a | 23 |
-| Предлоги | con | 1 |
-| Предлоги | de | 9 |
+| Предлоги | a | 28 |
+| Предлоги | con | 4 |
+| Предлоги | de | 17 |
 | Предлоги | desde | 1 |
-| Предлоги | en | 25 |
+| Предлоги | en | 36 |
 | Предлоги | entre | 1 |
 | Предлоги | hacia | 1 |
 | Предлоги | hasta | 1 |
-| Предлоги | para | 3 |
-| Предлоги | por | 3 |
+| Предлоги | para | 5 |
+| Предлоги | por | 5 |
 | Предлоги | sin | 1 |
-| Предлоги | sobre | 4 |
+| Предлоги | sobre | 5 |
 | Предлоги | tras | 1 |
 | Предлоги места | A la derecha | 1 |
 | Предлоги места | A la izquierda | 1 |
@@ -205,7 +203,7 @@
 | Природа | la ísla | 1 |
 | Природа | la montáña | 2 |
 | Природа | la núbe | 1 |
-| Природа | las flóres | 1 |
+| Природа | las flóres | 2 |
 | Природа | los árboles | 1 |
 | Природа | los pájaros | 1 |
 | Союзы | así que | 1 |
@@ -215,13 +213,13 @@
 | Союзы | luego | 1 |
 | Союзы | mientras | 1 |
 | Союзы | ni | 1 |
-| Союзы | pero | 1 |
-| Союзы | porque | 1 |
-| Союзы | que | 11 |
+| Союзы | pero | 3 |
+| Союзы | porque | 3 |
+| Союзы | que | 16 |
 | Союзы | si | 1 |
-| Союзы | sino | 1 |
+| Союзы | sino | 4 |
 | Союзы | ya que | 1 |
-| Указательные местоимения | aquel | 1 |
+| Указательные местоимения | aquel | 2 |
 | Указательные местоимения | aquella | 1 |
 | Указательные местоимения | aquellas | 1 |
 | Указательные местоимения | aquello | 1 |
@@ -229,10 +227,10 @@
 | Указательные местоимения | esa | 1 |
 | Указательные местоимения | esas | 1 |
 | Указательные местоимения | ese | 2 |
-| Указательные местоимения | eso | 3 |
+| Указательные местоимения | eso | 4 |
 | Указательные местоимения | esos | 1 |
-| Указательные местоимения | esta | 27 |
-| Указательные местоимения | estas | 1 |
+| Указательные местоимения | esta | 34 |
+| Указательные местоимения | estas | 2 |
 | Указательные местоимения | este | 1 |
 | Указательные местоимения | esto | 1 |
 | Указательные местоимения | estos | 1 |
@@ -287,7 +285,7 @@
 | Estar + прилагательное / состояние | estár soltéro | 1 |
 | Estar + прилагательное / состояние | estár súcio | 1 |
 | Estar + прилагательное / состояние | estár tríste | 1 |
-| Hace | ¿Qué tiempo hace? | 1 |
+| Hace | ¿Qué tiempo hace? | 2 |
 | Hace | buen tiémpo | 1 |
 | Hace | calór | 2 |
 | Hace | frío | 3 |
@@ -348,10 +346,10 @@
 | Все времена | nos | 1 |
 | Фразы | muchísimo | 0 |
 | Фразы | tranquílo | 1 |
-| Artículos y género | las | 5 |
-| Artículos y género | los | 3 |
+| Artículos y género | las | 9 |
+| Artículos y género | los | 4 |
 | Artículos y género | profesor | 0 |
-| Artículos y género | una | 0 |
+| Artículos y género | una | 6 |
 | Artículos y género | unas | 0 |
 | Artículos y género | unos | 0 |
 | Futuro simple | cabér | 0 |
@@ -414,7 +412,7 @@
 | Imperfecto | veíamos | 0 |
 | Imperfecto | veían | 0 |
 | Imperfecto | veías | 1 |
-| Muy / Mucho | ántes | 4 |
+| Muy / Mucho | ántes | 3 |
 | Muy / Mucho | después | 6 |
 | Muy / Mucho | más | 7 |
 | Muy / Mucho | mayór | 0 |
@@ -426,7 +424,7 @@
 | Presente | coméis | 1 |
 | Presente | comémos | 0 |
 | Presente | cómen | 0 |
-| Presente | cómes | 1 |
+| Presente | cómes | 0 |
 | Presente | cómo | 1 |
 | Presente | conocér | 1 |
 | Presente | conózco | 0 |
@@ -446,7 +444,7 @@
 | Presente | háblo | 0 |
 | Presente | mío | 0 |
 | Presente | míos | 0 |
-| Presente | mis | 2 |
+| Presente | mis | 4 |
 | Presente | nuestro | 0 |
 | Presente | nuestros | 0 |
 | Presente | pedímos | 0 |
@@ -472,7 +470,7 @@
 | Presente | puédo | 0 |
 | Presente | sois | 0 |
 | Presente | somos | 0 |
-| Presente | son | 5 |
+| Presente | son | 6 |
 | Presente | soy | 0 |
 | Presente | sus | 0 |
 | Presente | suyo | 0 |
@@ -490,7 +488,7 @@
 | Presente | vivímos | 0 |
 | Presente | vivís | 0 |
 | Presente | vívo | 0 |
-| Presente | voy | 2 |
+| Presente | voy | 3 |
 | Presente | vuestro | 0 |
 | Presente | vuestros | 0 |
 | Pretérito perfecto | beb-ído | 0 |
@@ -571,7 +569,7 @@
 | Pretérito perfecto simple | estúvo | 0 |
 | Pretérito perfecto simple | fue | 0 |
 | Pretérito perfecto simple | fuéron | 0 |
-| Pretérito perfecto simple | fui | 0 |
+| Pretérito perfecto simple | fui | 1 |
 | Pretérito perfecto simple | fuímos | 1 |
 | Pretérito perfecto simple | fuíste | 1 |
 | Pretérito perfecto simple | fuísteis | 0 |
@@ -629,7 +627,7 @@
 | Pretérito perfecto simple | viníste | 0 |
 | Pretérito perfecto simple | vinísteis | 0 |
 | Pretérito perfecto simple | víno | 2 |
-| Pretérito perfecto simple | viví | 0 |
+| Pretérito perfecto simple | viví | 1 |
 | Pretérito perfecto simple | viviéron | 0 |
 | Pretérito perfecto simple | vivímos | 0 |
 | Pretérito perfecto simple | vivió | 0 |
@@ -640,54 +638,208 @@
 
 | Раздел | Элемент | Статус |
 | --- | --- | --- |
+| меня тебя | a mí |
+| меня тебя | a ti |
 
 ## Потенциально перегруженные элементы
 
 | Раздел | Элемент | Использований |
 | --- | --- | --- |
-| Указательные местоимения | esta | 27 |
-| Предлоги | en | 25 |
-| Предлоги | a | 23 |
-| Союзы | que | 11 |
-| Наречия места | allí | 10 |
-| Наречия места | aquí | 10 |
-| Вопросительные слова | ¿Qué? | 9 |
-| Предлоги | de | 9 |
-| Предлоги | sobre | 4 |
+| Предлоги | en | 36 |
+| Указательные местоимения | esta | 34 |
+| Предлоги | a | 28 |
+| Предлоги | de | 17 |
+| Союзы | que | 16 |
+| Вопросительные слова | ¿Qué? | 10 |
+| Наречия места | allí | 9 |
+| Наречия места | aquí | 9 |
+| меня тебя | me | 5 |
+| Предлоги | para | 5 |
+| Предлоги | por | 5 |
+| Предлоги | sobre | 5 |
+| Мебель и предметы | la mésa | 4 |
+| Предлоги | con | 4 |
 | Природа | el mar | 4 |
-| Мебель и предметы | la mésa | 3 |
-| меня тебя | me | 3 |
+| Союзы | sino | 4 |
+| Указательные местоимения | eso | 4 |
 | меня тебя | te | 3 |
 | Наречия места | allá | 3 |
-| Предлоги | para | 3 |
-| Предлоги | por | 3 |
-| Указательные местоимения | eso | 3 |
+| Союзы | pero | 3 |
+| Союзы | porque | 3 |
 | Hace | frío | 3 |
 
 ## Покрытие глаголов по временам
 
-Нет данных.
+| Время | Лемма | Покрыто |
+| --- | --- | --- |
+| Pretérito perfecto simple | dar | нет |
+| Pretérito perfecto simple | decir | нет |
+| Pretérito perfecto simple | estar | нет |
+| Pretérito perfecto simple | hacer | нет |
+| Pretérito perfecto simple | ir | да |
+| Pretérito perfecto simple | poder | нет |
+| Pretérito perfecto simple | poner | нет |
+| Pretérito perfecto simple | querer | да |
+| Pretérito perfecto simple | saber | нет |
+| Pretérito perfecto simple | ser | да |
+| Pretérito perfecto simple | tener | нет |
+| Pretérito perfecto simple | traer | да |
+| Pretérito perfecto simple | venir | да |
+| Gerundio | comér | нет |
+| Gerundio | dormír | нет |
+| Gerundio | escribír | нет |
+| Gerundio | hablár | нет |
+| Gerundio | ir | нет |
+| Gerundio | leér | нет |
+| Gerundio | pedír | нет |
+| Gerundio | podér | нет |
+| Gerundio | sonreír | нет |
+| Pretérito perfecto | bebér | нет |
+| Pretérito perfecto | caér | нет |
+| Pretérito perfecto | componér | нет |
+| Pretérito perfecto | cubrír | нет |
+| Pretérito perfecto | decír | да |
+| Pretérito perfecto | descomponér | нет |
+| Pretérito perfecto | describír | нет |
+| Pretérito perfecto | descubrír | да |
+| Pretérito perfecto | devolvér | да |
+| Pretérito perfecto | escribír | нет |
+| Pretérito perfecto | freír | нет |
+| Pretérito perfecto | hacér | нет |
+| Pretérito perfecto | imponér | нет |
+| Pretérito perfecto | leér | нет |
+| Pretérito perfecto | morír | нет |
+| Pretérito perfecto | oponér | да |
+| Pretérito perfecto | ponér | нет |
+| Pretérito perfecto | proponér | нет |
+| Pretérito perfecto | resolvér | нет |
+| Pretérito perfecto | rompér | да |
+| Pretérito perfecto | ver | нет |
+| Pretérito perfecto | vivír | нет |
+| Pretérito perfecto | volvér | нет |
+| Presente | comer | нет |
+| Presente | conocér | нет |
+| Presente | construír | нет |
+| Presente | hablar | нет |
+| Presente | ir | нет |
+| Presente | levantarse | да |
+| Presente | llamarse | нет |
+| Presente | pedír | да |
+| Presente | pensár | нет |
+| Presente | podér | да |
+| Presente | ser | да |
+| Presente | vivir | нет |
+| Imperfecto | Ir | да |
+| Imperfecto | Ser | да |
+| Imperfecto | Ver | да |
+| Futuro simple | cabér | нет |
+| Futuro simple | comér | да |
+| Futuro simple | decír | да |
+| Futuro simple | habér | да |
+| Futuro simple | hacér | да |
+| Futuro simple | podér | да |
+| Futuro simple | ponér | нет |
+| Futuro simple | querér | нет |
+| Futuro simple | sabér | да |
+| Futuro simple | salír | нет |
+| Futuro simple | tenér | нет |
+| Futuro simple | valér | нет |
+| Futuro simple | venír | нет |
 
 ## Покрытие лиц по временным разделам
 
-Нет данных.
+| Тема | Лицо | Покрыто |
+| --- | --- | --- |
+| 1. Настоящее время. | yo | нет |
+| 1. Настоящее время. | tú | да |
+| 1. Настоящее время. | él / ella / usted | да |
+| 1. Настоящее время. | nosotros/as | да |
+| 1. Настоящее время. | vosotros/as | нет |
+| 1. Настоящее время. | ellos / ellas / ustedes | да |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | yo | да |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | tú | да |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | él / ella / usted | да |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | nosotros/as | нет |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | vosotros/as | нет |
+| 20-21. прошлое законченное (pretérito perfécto compuésto): habér + particípios. | ellos / ellas / ustedes | да |
+| 22. прошедшее простое (pretérito imperfécto). | yo | да |
+| 22. прошедшее простое (pretérito imperfécto). | tú | да |
+| 22. прошедшее простое (pretérito imperfécto). | él / ella / usted | да |
+| 22. прошедшее простое (pretérito imperfécto). | nosotros/as | да |
+| 22. прошедшее простое (pretérito imperfécto). | vosotros/as | да |
+| 22. прошедшее простое (pretérito imperfécto). | ellos / ellas / ustedes | да |
+| 23. Прошлое законченное время (pretérito perfécto símple). | yo | нет |
+| 23. Прошлое законченное время (pretérito perfécto símple). | tú | да |
+| 23. Прошлое законченное время (pretérito perfécto símple). | él / ella / usted | да |
+| 23. Прошлое законченное время (pretérito perfécto símple). | nosotros/as | да |
+| 23. Прошлое законченное время (pretérito perfécto símple). | vosotros/as | нет |
+| 23. Прошлое законченное время (pretérito perfécto símple). | ellos / ellas / ustedes | да |
+| 24. простое будущее время (futúro símple). | yo | да |
+| 24. простое будущее время (futúro símple). | tú | да |
+| 24. простое будущее время (futúro símple). | él / ella / usted | да |
+| 24. простое будущее время (futúro símple). | nosotros/as | да |
+| 24. простое будущее время (futúro símple). | vosotros/as | нет |
+| 24. простое будущее время (futúro símple). | ellos / ellas / ustedes | да |
 
 ## Кандидаты на сокращение фраз
 
 | Тема | Испанский | Почему можно убрать |
 | --- | --- | --- |
-| 15-16. Погода: háce/está/hay, осадки/явления + времена года | en veráno vámos a la cósta. | все канонические покрытия дублируются в других фразах |
+| 3. Вопросы: вопросительные слова. | por qué no respóndes? | все канонические покрытия дублируются в других фразах |
+| 4. Местоимения: меня тебя ему их. | te dan la cárta. | все канонические покрытия дублируются в других фразах |
+| 4. Местоимения: меня тебя ему их. | me dan la cuénta. | все канонические покрытия дублируются в других фразах |
+| 7. Предлоги. | no, sino. No quiero playa, sino montañas. | все канонические покрытия дублируются в других фразах |
+| 15-16. Погода, времена года. | qué tiémpo háce? | все канонические покрытия дублируются в других фразах |
+| 15-16. Погода, времена года. | qué tiémpo háce aquí? | все канонические покрытия дублируются в других фразах |
+| 15-16. Погода, времена года. | en veráno vámos a la cósta. | все канонические покрытия дублируются в других фразах |
+| 18. Союзы. | no va pórque está cansádo. | все канонические покрытия дублируются в других фразах |
+| 18. Союзы. | no es tríste, sino ráro. | все канонические покрытия дублируются в других фразах |
+| 23. Прошлое законченное время (pretérito perfécto símple). | La semana pasada viví en casa de mi abuela. | все канонические покрытия дублируются в других фразах |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Ayer me levanté a las siete. | все канонические покрытия дублируются в других фразах |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Aquel día puse las llaves sobre la mesa. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Viajé a una de mis zonas favoritas de Bali, que no visité esta vez. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Estas flores no son de esta zona, sino que las he comprado hoy en mi barrio. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Fui a surf ayer, pero no surfee porque las olas eran muy pequenias. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Grabare un video de espanol, porque he tenido un recordatorio, pero no lo hice. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | En Moscu cada dia laborable iba a la oficina, y esta semana he trabajado en casa. Ahora no estoy trabahando, y manana trabajare en una cafeteria. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | En Barna cada dia desayunaba un batido de frutas, y esta semana he comido yogur con granola. Ahora estoy picando algo con un cafe y un bollo por que voy a surfear, y manana cocinare pudín de chía. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | En Astrakan me movia en minibuses, y esta semana he ido en taxi. Ahora estoy conduciendo una moto, y el ano que viene conducire un coche. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Antes no podia nadar mas de cincuenta metros, y esta ano he empezado a practicar surf. Ahora estoy haciendo ejercicio en el gimnasio, y manana saldre a correr. | все канонические покрытия дублируются в других фразах |
+| 25. Фразы: разговорное кафе быт. | Antes no comprendia máscaras para dormir, y ahora estoy durmiendo con una. Esta semana he perdido mis tapones para los oídos, por eso comprare nuevos manana. | все канонические покрытия дублируются в других фразах |
 
 ## Проверка соответствия темам
 
 | Тема | Фраза | Ожидалось |
 | --- | --- | --- |
-| 14. Время и даты: вопросы/формулы | sálgo el lúnes qué viéne. | формулу времени или даты |
-| 14. Время и даты: вопросы/формулы | la semána qué viéne descánso. | формулу времени или даты |
+| 14. Время и даты. | sálgo el lúnes qué viéne. | формулу времени или даты |
+| 14. Время и даты. | la semána qué viéne descánso. | формулу времени или даты |
+| 15-16. Погода, времена года. | qué tiémpo háce? | погодную форму, осадки, явление или время года |
+| 15-16. Погода, времена года. | qué tiémpo háce aquí? | погодную форму, осадки, явление или время года |
+| 15-16. Погода, времена года. | la niéve cúbre la montáña. | погодную форму, осадки, явление или время года |
+| 15-16. Погода, времена года. | la salída del sol es muy boníta aquí. | погодную форму, осадки, явление или время года |
+| 15-16. Погода, времена года. | la puésta del sol se ve bien allá. | погодную форму, осадки, явление или время года |
+| 15-16. Погода, времена года. | en veráno vámos a la cósta. | погодную форму, осадки, явление или время года |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Ayer me levanté a las siete. | форму pretérito perfecto simple |
+| 23. Прошлое законченное время (pretérito perfécto símple). | La semana pasada estudié español dos horas. | форму pretérito perfecto simple |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Anteayer oí un ruido extraño. | форму pretérito perfecto simple |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Anoche leí un cuento corto. | форму pretérito perfecto simple |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Entonces supe la verdad. | форму pretérito perfecto simple |
 
 ## Проверка временного контекста
 
-Нарушений не найдено.
+| Тема | Фраза | Ожидалось |
+| --- | --- | --- |
+| 22. прошедшее простое (pretérito imperfécto). | ántes yo hablába póco. | уместное указание времени для этой темы |
+| 22. прошедшее простое (pretérito imperfécto). | ántes éramos muy tranquílos. | уместное указание времени для этой темы |
+| 22. прошедшее простое (pretérito imperfécto). | en una vida pasada éllos éran mis amígos. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | anóche tú comíste muy póco. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | élla víno tempráno. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Ayer me levanté a las siete. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Anteayer oí un ruido extraño. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Entonces supe la verdad. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Una vez quise aprender japonés. | уместное указание времени для этой темы |
+| 23. Прошлое законченное время (pretérito perfécto símple). | Aquel día puse las llaves sobre la mesa. | уместное указание времени для этой темы |
+| 24. простое будущее время (futúro símple). | luégo voy a dar de comér a los gátos. | уместное указание времени для этой темы |
 
 ## Проверка русских переводов
 
